@@ -2,7 +2,7 @@ export const images = [
   {
     id: 1,
     image:
-      "https://demonslayer-anime.com/assets_portal/img/main/img_katanakaji2.jpg",
+      "https://demonslayer-anime.com/assets_portal/img/main/img_katanakaji1.jpg",
   },
   {
     id: 2,

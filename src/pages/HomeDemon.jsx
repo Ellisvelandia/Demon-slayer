@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "../components/header/Header";
 import Cards from "../components/home/Cards";
+import { Popup } from "../components/home/Popup";
+import VideoTrailer from "../components/home/VideoTrailer";
 
 export const HomeDemon = () => {
+  const [movie, setMovie] = useState(null);
+
   return (
     <>
       <Header />
@@ -21,6 +25,9 @@ export const HomeDemon = () => {
               DESTROYER OF DEMONS
             </p>
           </div>
+          <div className="bg-black flex px-1 py-2 text-base mb-3  md:text-2xl font-black border-solid border border-[#6b4312] text-white">
+            <p className="bg-[#6b4312] p-2">Trailers</p>
+          </div>
           <div className="w-full h-full flex justify-center items-center">
             <iframe
               width="560"
@@ -32,6 +39,13 @@ export const HomeDemon = () => {
               allowFullScreen
               className="object-fill border-solid border-[#6b4312] w-full sm:px-0 px-4 sm:h-full"
             ></iframe>
+          </div>
+
+          <VideoTrailer setMovie={setMovie} />
+          <Popup setMovie={setMovie} movie={movie} />
+
+          <div className="bg-black flex px-1 py-2 text-base mb-3  md:text-2xl font-black border-solid border border-[#6b4312] text-white">
+            <p className="bg-[#6b4312] p-2">Seasons and Movies</p>
           </div>
           <div className="bg-black px-4 py-5 flex border-solid border border-[#6b4312] w-full">
             <Cards />

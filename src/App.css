@@ -53,3 +53,10 @@ body {
   -o-background-size: 76vw, auto, auto;
   background-size: 76vw, auto, auto;
 }
+
+.befores::before {
+  background: url("https://demonslayer-anime.com/assets_portal/img/movie/icon_play.png")
+    no-repeat center rgba(0, 0, 0, 0.8);
+}
+
+

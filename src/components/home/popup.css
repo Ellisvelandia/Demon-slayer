@@ -1,0 +1,40 @@
+ .popup-media {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  width: 100%;
+}
+
+ .popup-media :is(img, iframe) {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  max-width: 65%;
+  max-height: 70%;
+  object-fit: fill;
+  border: none;
+  -webkit-text-size-adjust: 100%;
+}
+
+ .popup-media button {
+  position: absolute;
+  top: 5px;
+  right: 20px;
+  font-size: 40px;
+  font-weight: 900;
+  z-index: 100;
+  cursor: pointer;
+  color: #fc0c0c;
+  user-select: none;
+}
+
+@media screen and (max-width: 912px) {
+   .popup-media :is(img, iframe) {
+    max-width: 100%;
+    max-height: 50%;
+  }
+}

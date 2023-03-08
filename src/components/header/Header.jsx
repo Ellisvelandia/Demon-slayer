@@ -12,7 +12,7 @@ const Header = () => {
   return (
     <>
       <div
-        className="pt-10 w-60 bg-black fixed box-border left-0 top-0 bottom-auto border-r-2 border-solid border-[#6b4312] min-h-screen flex flex-col invisible md:visible z-50"
+        className="pt-10 w-60 bg-black fixed box-border left-0 top-0 bottom-auto border-r-2 border-solid border-[#6b4312] min-h-screen flex flex-col invisible md:visible z-10"
         style={{ paddingTop: "1px" }}
       >
         <div className="text-center items-center pt-6 pb-7">
