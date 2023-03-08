@@ -10,8 +10,8 @@ const Navlinks = [
 
 const Links = () => {
   return (
-    <div className="px-3 py-5 border-t-2 border-solid border-[#A7000C] text-[#fff] font-normal tracking-widest text-left">
-      <p className="inline-block bg-[#A7000C] px-1 py-2 text-base mb-3 ">
+    <div className="px-3 py-5 border-t-2 border-solid border-[#6b4312] text-[#fff] font-normal tracking-widest text-left">
+      <p className="inline-block bg-[#6b4312] px-1 py-2 text-base mb-3 ">
         Tv Anime
       </p>
       {Navlinks.map(({ name, to }) => (
@@ -20,7 +20,7 @@ const Links = () => {
         </Link>
       ))}
 
-      <p className="inline-block bg-[#A7000C] px-1 py-2 text-base mb-3">
+      <p className="inline-block bg-[#6b4312] px-1 py-2 text-base mb-3">
         The Movie
       </p>
       <Link to="#">
