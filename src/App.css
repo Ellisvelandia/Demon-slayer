@@ -33,7 +33,7 @@ body {
   position: absolute;
   width: 8vw;
   height: 5.33vw;
-  top: calc(50% - 5.33vw / 2);
+  top: calc(50% - 10.33vw / 2);
   right: 5vw;
   z-index: 505;
 }

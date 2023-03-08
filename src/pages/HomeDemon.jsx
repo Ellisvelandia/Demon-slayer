@@ -10,11 +10,14 @@ export const HomeDemon = () => {
         <div className="relative z-10 md:ml-[240px] h-screen">
           <div className="bg-black px-4 py-5 flex border-solid border border-[#6b4312] text-white  justify-center">
             <img
-              src="https://i.ibb.co/V24XJZf/1.jpg"
+              src="https://a-static.besthdwallpaper.com/demon-slayer-9-hashiras-wallpaper-1920x600-90592_57.jpg"
               alt=""
               className="w-full h-52 object-fill relative shadow-md shadow-[#6b4312]"
             />
-            <p className="absolute top-5 lg:text-5xl text-xl font-black shadow-lg shadow-slate-800 p-2 tracking-widest leading-5">
+            <p
+              className="absolute top-5 lg:text-5xl text-xl font-black p-2 tracking-widest leading-5"
+              style={{ textShadow: "5px 2px 2px #000" }}
+            >
               DESTROYER OF DEMONS
             </p>
           </div>
