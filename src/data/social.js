@@ -9,6 +9,6 @@ export const socials = [
   },
   {
     id: 3,
-    url: "https://github.com/Ellisvelandia",
+    url: "https://www.tiktok.com/@ellisvelandia?_t=8aUEE2Qn0B4&_r=1",
   },
 ];

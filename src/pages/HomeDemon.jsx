@@ -28,7 +28,7 @@ export const HomeDemon = () => {
           <div className="bg-black flex px-1 py-2 text-base mb-3  md:text-2xl font-black border-solid border border-[#6b4312] text-white">
             <p className="bg-[#6b4312] p-2">Trailers</p>
           </div>
-          <div className="w-full h-full flex justify-center items-center">
+          <div className="w-full h-full flex justify-center items-center sm:p-0 p-2">
             <iframe
               width="560"
               height="315"
@@ -37,7 +37,7 @@ export const HomeDemon = () => {
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen
-              className="object-fill border-solid border-[#6b4312] w-full sm:px-0 px-4 sm:h-full"
+              className="aspect-video border-solid border-[#6b4312] w-full h-full "
             ></iframe>
           </div>
 
