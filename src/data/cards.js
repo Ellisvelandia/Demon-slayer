@@ -18,6 +18,7 @@ export const images = [
     id: 4,
     image:
       "https://demonslayer-anime.com/assets_portal/img/main/img_mugentrain.jpg",
+    link: "mugenmovie",
   },
   {
     id: 5,

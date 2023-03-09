@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { images } from "../../data/cards";
 
 const Cards = () => {
@@ -10,7 +11,9 @@ const Cards = () => {
           key={image.id}
         >
           <div className="relative block">
-            <img src={image.image} alt="seasons & movies pictures" />
+            <Link to={image.link}>
+              <img src={image.image} alt="seasons & movies pictures" />
+            </Link>
           </div>
         </div>
       ))}
