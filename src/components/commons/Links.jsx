@@ -5,7 +5,7 @@ const Navlinks = [
   { name: "Swordsmith Village Arc", to: "/" },
   { name: "Entertainment District Arc", to: "/" },
   { name: "Mugen Train Arc", to: "/" },
-  { name: "Tanjiro Kamado Unwavering Resolve Arc", to: "/" },
+  { name: "Tanjiro Kamado Unwavering Resolve Arc", to: "/resolvearc" },
 ];
 
 const Links = () => {

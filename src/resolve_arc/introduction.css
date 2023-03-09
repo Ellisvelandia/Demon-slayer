@@ -1,0 +1,15 @@
+.bg_introduction {
+  background: url("https://demonslayer-anime.com/risshihen/assets/img/common/bg/bg_repeat_blue.jpg");
+}
+
+.area {
+  content: "";
+  background: url("https://demonslayer-anime.com/risshihen/assets/img/common/bg/bg_black_repeat_down.png")
+    repeat-x center top;
+}
+
+.area_up {
+  content: "";
+  background: url("https://demonslayer-anime.com/risshihen/assets/img/common/bg/bg_black_repeat_top.png")
+    repeat-x center top;
+}

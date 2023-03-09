@@ -2,27 +2,31 @@ export const images = [
   {
     id: 1,
     image:
-      "https://demonslayer-anime.com/assets_portal/img/main/img_katanakaji1.jpg",
+      "https://res.cloudinary.com/dr49dbp8d/image/upload/v1678387005/demon%20slayer/img_katanakaji1_1_xf8ott.webp",
+    link: "",
   },
   {
     id: 2,
     image:
-      "https://demonslayer-anime.com/assets_portal/img/main/img_entertainment_district_arc.jpg",
+      "https://res.cloudinary.com/dr49dbp8d/image/upload/v1678387249/demon%20slayer/img-entertainment-district-arc_har5xv.webp",
+    link: "",
   },
   {
     id: 3,
     image:
-      "https://demonslayer-anime.com/assets_portal/img/main/img_mugentrainarc.jpg",
+      "https://res.cloudinary.com/dr49dbp8d/image/upload/v1678387478/demon%20slayer/img-mugentrainarc_d6zklg.webp",
+    link: "",
   },
   {
     id: 4,
     image:
-      "https://demonslayer-anime.com/assets_portal/img/main/img_mugentrain.jpg",
+      "https://res.cloudinary.com/dr49dbp8d/image/upload/v1678387556/demon%20slayer/img-mugentrain_befwau.webp",
     link: "mugenmovie",
   },
   {
     id: 5,
     image:
-      "https://demonslayer-anime.com/assets_portal/img/main/img_risshihen.jpg",
+      "https://res.cloudinary.com/dr49dbp8d/image/upload/v1678387645/demon%20slayer/img-risshihen_b99bpp.webp",
+    link: "resolvearc",
   },
 ];
