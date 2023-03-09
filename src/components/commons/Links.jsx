@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Navlinks = [
   { name: "Swordsmith Village Arc", to: "/" },
   { name: "Entertainment District Arc", to: "/" },
-  { name: "Mugen Train Arc", to: "/" },
+  { name: "Mugen Train Arc", to: "/mugentv" },
   { name: "Tanjiro Kamado Unwavering Resolve Arc", to: "/resolvearc" },
 ];
 
@@ -19,7 +19,7 @@ const Links = () => {
           <p className="text-sm mb-3">{name}</p>
         </Link>
       ))}
-       
+
       <p className="inline-block bg-[#6b4312] px-1 py-2 text-base mb-3">
         The Movie
       </p>

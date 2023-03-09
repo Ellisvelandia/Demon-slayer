@@ -15,7 +15,7 @@ export const images = [
     id: 3,
     image:
       "https://res.cloudinary.com/dr49dbp8d/image/upload/v1678387478/demon%20slayer/img-mugentrainarc_d6zklg.webp",
-    link: "",
+    link: "mugentv",
   },
   {
     id: 4,

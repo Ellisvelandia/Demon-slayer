@@ -17,7 +17,7 @@ const Header = () => {
       >
         <div className="text-center items-center pt-6 pb-7">
           <img
-            src="https://demonslayer-anime.com/assets_portal/img/common/logo.png"
+            src="https://res.cloudinary.com/dr49dbp8d/image/upload/v1678399511/demon%20slayer/logo_1_eldkrr.webp"
             alt="demon slayer"
             className="w-full"
           />
@@ -50,7 +50,7 @@ const Header = () => {
         </div>
         <div className="w-[16vw] m-auto">
           <img
-            src="https://demonslayer-anime.com/assets_portal/img/common/logo.png"
+            src="https://res.cloudinary.com/dr49dbp8d/image/upload/v1678399641/demon%20slayer/logo_2_zepmcn.webp"
             alt="Demon Slayer: Kimetsu No Yaiba"
             className="max-w-full align-bottom overflow-clip "
           />
