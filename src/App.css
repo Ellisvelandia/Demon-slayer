@@ -59,4 +59,41 @@ body {
     no-repeat center rgba(0, 0, 0, 0.8);
 }
 
+.bg-mugen {
+  background: url("https://demonslayer-anime.com/mugentrain/assets/img/kv.jpg")
+    no-repeat center top fixed;
+  -webkit-background-size: 100vw, auto, auto;
+  -o-background-size: 100vw, auto, auto;
+  background-size: 100vw, auto, auto;
+}
 
+.wrapper {
+  background-image: url("https://demonslayer-anime.com/mugentrain/assets/img/bg_smoke_red.png");
+  -webkit-animation: move_bg_r 58s linear infinite;
+  -moz-animation: move_bg_r 58s linear infinite;
+  -o-animation: move_bg_r 58s linear infinite;
+  animation: move_bg_r 58s linear infinite;
+}
+
+
+
+.wrappers {
+  background-image: url("https://demonslayer-anime.com/mugentrain/assets/img/bg_smoke_blue.png");
+  -webkit-animation: move_bg_r 60s linear infinite;
+  -moz-animation: move_bg_r 60s linear infinite;
+  -o-animation: move_bg_r 60s linear infinite;
+  animation: move_bg_r 60s linear infinite;
+}
+
+
+
+@media only screen and (max-width: 750px) { .pc { display: none; } }
+@-webkit-keyframes move_bg_r { 0% { background-position: 0vw top; }
+  100% { background-position: -100vw top; } }
+@-o-keyframes move_bg_r { 0% { background-position: 0vw top; }
+  100% { background-position: -100vw top; } }
+@-moz-keyframes move_bg_r { 0% { background-position: 0vw top; }
+  100% { background-position: -100vw top; } }
+@keyframes move_bg_r { 0% { background-position: 0vw top; }
+  100% { background-position: -100vw top; } }
+  

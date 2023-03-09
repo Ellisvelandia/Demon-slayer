@@ -3,7 +3,7 @@ import { images } from "../../data/cards";
 
 const Cards = () => {
   return (
-    <div className="flex flex-wrap px-2">
+    <div className="flex flex-wrap px-2 wrapper">
       {images.map((image) => (
         <div
           className="lg:w-[25%] w-[50%] box-border border-b border-r relative border-solid border-[#6b4312] p-1 hover:scale-105 transition ease-in-out duration-700"

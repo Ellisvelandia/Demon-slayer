@@ -23,7 +23,7 @@ const Links = () => {
       <p className="inline-block bg-[#6b4312] px-1 py-2 text-base mb-3">
         The Movie
       </p>
-      <Link to="#">
+      <Link to="/mugenmovie">
         <p className="text-sm mb-3">The Movie: Mugen Train</p>
       </Link>
     </div>
