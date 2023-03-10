@@ -6,7 +6,7 @@ const MugenTv = () => {
     <div className="relative w-full my-0 mx-auto">
       <div className="flex justify-center lg:flex-row-reverse flex-col bg-tv relative w-full">
         <div className="relative lg:w-[58%] w-full">
-          <figure className="w-full relative m-auto">
+          <figure className="w-full m-auto">
             <img
               src="https://res.cloudinary.com/dr49dbp8d/image/upload/v1678400571/demon%20slayer/kv_nqqrgy.webp"
               alt="mugen tv"

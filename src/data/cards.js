@@ -9,7 +9,7 @@ export const images = [
     id: 2,
     image:
       "https://res.cloudinary.com/dr49dbp8d/image/upload/v1678387249/demon%20slayer/img-entertainment-district-arc_har5xv.webp",
-    link: "",
+    link: "distric",
   },
   {
     id: 3,
