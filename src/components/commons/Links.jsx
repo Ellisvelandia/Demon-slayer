@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const Navlinks = [
-  { name: "Swordsmith Village Arc", to: "/" },
+  { name: "Swordsmith Village Arc", to: "/village" },
   { name: "Entertainment District Arc", to: "/distric" },
   { name: "Mugen Train Arc", to: "/mugentv" },
   { name: "Tanjiro Kamado Unwavering Resolve Arc", to: "/resolvearc" },

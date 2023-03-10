@@ -3,7 +3,7 @@ export const images = [
     id: 1,
     image:
       "https://res.cloudinary.com/dr49dbp8d/image/upload/v1678387005/demon%20slayer/img_katanakaji1_1_xf8ott.webp",
-    link: "",
+    link: "village",
   },
   {
     id: 2,
