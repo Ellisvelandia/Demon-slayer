@@ -1,5 +1,6 @@
 import MugenTvTrailer from "../mugentv/MugenTvTrailer";
 import "../mugentv/mugentv.css";
+import FooterMugenTv from "../mugentv/FooterMugenTv";
 
 const MugenTv = () => {
   return (
@@ -16,6 +17,7 @@ const MugenTv = () => {
         </div>
         <MugenTvTrailer />
       </div>
+      <FooterMugenTv />
     </div>
   );
 };

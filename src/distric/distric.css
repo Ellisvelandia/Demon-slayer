@@ -8,9 +8,8 @@
   scroll-behavior: smooth;
 }
 
-.bg-tv_blue {
-  background: url("https://res.cloudinary.com/dr49dbp8d/image/upload/v1678405987/demon%20slayer/bg-top2-pc_p7rkbw.webp")
-    no-repeat center top fixed;
+.bg-distric_white {
+  background: url("") no-repeat center top fixed;
   background-size: cover;
   max-width: 100%;
   -webkit-background-size: cover;

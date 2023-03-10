@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import FooterMugen from "../mugenmovies/FooterMugen";
+import FooterReveal from "../resolve_arc/FooterReveal";
 import Introduction from "../resolve_arc/Introduction";
 import ListMoviesReveal from "../resolve_arc/ListMoviesReveal";
 
@@ -26,7 +26,7 @@ const Tanjiro = () => {
       </div>
       <ListMoviesReveal />
       <Introduction />
-      <FooterMugen />
+      <FooterReveal />
     </div>
   );
 };

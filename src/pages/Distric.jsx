@@ -19,18 +19,15 @@ const Distric = () => {
           </div>
 
           <div className="flex-1 min-w-0  lg:pt-16 pt-8">
-            <Link to="/">
-              <div
-                className=" w-[61%] lg:pb-12"
-                style={{ margin: "0 auto" }}
-              >
+            <div className=" w-[61%] lg:pb-12" style={{ margin: "0 auto" }}>
+              <Link to="/">
                 <img
                   src="https://res.cloudinary.com/dr49dbp8d/image/upload/v1678418015/demon%20slayer/logo_4_bkuioj.webp"
                   alt="mugen arc logo"
                   className="block align-middle w-full"
                 />
-              </div>
-            </Link>
+              </Link>
+            </div>
             <div className=" w-[60%] lg:my-0 py-2 mx-auto text-white">
               <p className="w-full block align-middle lg:text-xl text-base font-black tracking-widest">
                 Stop that crying, and you out of it for crying out loud. we're
@@ -41,6 +38,7 @@ const Distric = () => {
             <DistricTrailer />
           </div>
         </div>
+        <FooterDistric/>
       </div>
     </>
   );

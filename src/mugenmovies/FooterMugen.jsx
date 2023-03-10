@@ -1,20 +1,36 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const FooterMugen = () => {
   return (
-    <footer className="bg-black relative md:text-right text-center w-full text-white p-8">
-      <div className="md:text-base text-xs mb-3 gap-2 inline-flex items-center">
-        <a href="http://aniplexusa.com/" target="_blank">
-          Aniplex of America
-        </a>
-        <div className="border-r h-3 "></div>
-
-        <a href="https://kimetsu.com/anime/" target="_blank">
-          Japanese Official Website
-        </a>
-        <div className="border-r h-3 "></div>
-        <div className="inline-block gap-2">
-          <p>©吾峠呼世晴／集英社・アニプレックス・ufotable</p>
+    <footer className="bg-black relative text-[#fff] pt-9 xl:pr-36 lg:pr-6 md:pr-8 pb-9 pl-0 ">
+      <div className="flex md:justify-end justify-center mb-4 flex-wrap text-right lg:text-[14px] text-[10px]">
+        <div className="pl-3 ml-3 relative">
+          <a href="http://aniplexusa.com/" target="_blank">
+            Aniplex of America
+          </a>
+        </div>
+        <div className="border-r px-2 h-3 "></div>
+        <div className="pl-3 ml-3 relative">
+          <a href="https://kimetsu.com/anime/" target="_blank">
+            Japanese Official Website
+          </a>
+        </div>
+      </div>
+      <p className="text-xs text-[#666666] md:text-right text-center text-[11px] md:my-0 my-4">
+        ©Koyoharu Gotoge / SHUEISHA, Aniplex, ufotable
+      </p>
+      <div className="md:text-left text-center tracking-widest flex justify-center md:my-0 my-6  items-center md:absolute md:top-[50%] md:left-10 md:transform md:-translate-y-1/2 lg:text-[14px] md:text-[11px] text-[12px]">
+        <div className="flex-col flex">
+          <Link to="/resolvearc" className="list-none relative mb-3">
+            Demon Slayer: Kimetsu No Yaiba Tanjiro Kamado Unwavering Resolve Arc
+          </Link>
+          <Link to="/mugentv" className="list-none relative mb-3">
+            Demon Slayer -Kimetsu No Yaiba- Mugen Train Arc
+          </Link>
+          <Link to="/distric" className="list-none relative mb-3">
+            Demon Slayer -Kimetsu No Yaiba- Entertainment District Arc
+          </Link>
         </div>
       </div>
     </footer>

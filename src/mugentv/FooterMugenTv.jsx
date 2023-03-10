@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const FooterDistric = () => {
+const FooterMugenTv = () => {
   return (
     <footer className="bg-black relative text-[#fff] pt-9 xl:pr-36 lg:pr-6 md:pr-8 pb-9 pl-0 ">
       <div className="flex md:justify-end justify-center mb-4 flex-wrap text-right lg:text-[14px] text-[10px]">
@@ -28,8 +28,8 @@ const FooterDistric = () => {
           <Link to="/mugenmovie" className="list-none relative mb-3">
             Demon Slayer -Kimetsu No Yaiba- The Movie: Mugen Train
           </Link>
-          <Link to="/mugentv" className="list-none relative mb-3">
-            Demon Slayer -Kimetsu No Yaiba- Mugen Train Arc
+          <Link to="/distric" className="list-none relative mb-3">
+            Demon Slayer -Kimetsu No Yaiba- Entertainment District Arc
           </Link>
         </div>
       </div>
@@ -37,4 +37,4 @@ const FooterDistric = () => {
   );
 };
 
-export default FooterDistric;
+export default FooterMugenTv;

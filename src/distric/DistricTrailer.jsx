@@ -10,14 +10,14 @@ const DistricTrailer = () => {
 
   return (
     <div className="w-full bg-distric" style={{ margin: "0 auto" }}>
-      <div className="w-full lg:pt-[27%] relative px-2 lg:py-0 py-8">
+      <div className="w-full xl:pt-[27%] relative px-2 lg:py-0 py-8">
         {!playing && (
           <div className="flex justify-center items-center">
             <img
               src="https://res.cloudinary.com/dr49dbp8d/image/upload/v1678418525/demon%20slayer/btn-play_1_isguwo.webp"
               alt="play logo"
               onClick={handlePlayClick}
-              className="absolute bottom-36 w-20 h-20"
+              className="absolute lg:bottom-36 bottom-44 w-24 h-20"
             />
           </div>
         )}
