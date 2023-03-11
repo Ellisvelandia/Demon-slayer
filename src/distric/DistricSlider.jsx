@@ -70,7 +70,7 @@ const DistricSlider = () => {
         <img
           src="https://res.cloudinary.com/dr49dbp8d/image/upload/v1678575562/demon%20slayer/is-dew8si4-fullview-removebg-preview_pzfxen.webp"
           alt="demons slayer"
-          className="md:w-80 w-60"
+          className="md:w-80 w-40"
           loading="lazy"
         />
       </div>
