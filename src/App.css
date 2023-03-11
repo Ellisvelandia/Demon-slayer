@@ -82,6 +82,68 @@ body {
   animation: move_bg_r 60s linear infinite;
 }
 
+.container .popup-media {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  z-index: 100;
+}
+
+.container .popup-media :is(img, iframe) {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  max-width: 80%;
+  max-height: 70%;
+  object-fit: fill;
+  border: none;
+  -webkit-text-size-adjust: 100%;
+}
+
+.container .popup-media button {
+  position: absolute;
+  top: 5px;
+  right: 20px;
+  font-size: 40px;
+  font-weight: 900;
+  z-index: 100;
+  cursor: pointer;
+  color: #fc0c0c;
+  user-select: none;
+}
+
+/* //swiper manga*/
+
+.swiper-slide {
+  width: 37rem;
+  height: 42rem;
+  position: relative;
+}
+
+.swiper-slide-shadow-left,
+.swiper-slide-shadow-right {
+  display: none;
+}
+
+.size_image {
+  width: 37rem;
+  height: 40rem;
+  border-radius: 0.5rem;
+  object-fit: fill;
+}
+
+@media screen and (max-width: 912px) {
+  .container .popup-media :is(img, iframe) {
+    max-width: 100%;
+    max-height: 50%;
+  }
+}
+
 @media only screen and (max-width: 1750px) {
   .pc {
     display: none;
