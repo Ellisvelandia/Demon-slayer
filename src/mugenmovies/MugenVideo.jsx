@@ -11,7 +11,8 @@ const MegunVideo = () => {
 
   return (
     <div className="flex lg:flex-row flex-col">
-      <div className="w-full p-1 justify-center items-center flex">
+      <div className="w-full p-1 justify-center items-center flex flex-col">
+        <h1 className="text-4xl text-white text-center leading-loose tracking-widest my-4 font-black shadow">Audio latino</h1>
         <div className="lg:w-[50%] md:w-[70%] w-full h-full max-h-full cursor-pointer border border-solid border-[#89000a] relative">
           {!playing && (
             <div className="w-full flex justify-center items-center bg-[rgba(0,0,0,0.4)]">
