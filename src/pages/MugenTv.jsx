@@ -18,7 +18,7 @@ const MugenTv = () => {
         </div>
         <MugenTvTrailer />
       </div>
-        <MugenSlider />
+      <MugenSlider />
       <FooterMugenTv />
     </div>
   );

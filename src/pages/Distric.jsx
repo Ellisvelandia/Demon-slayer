@@ -2,12 +2,13 @@ import { Link } from "react-router-dom";
 import DistricTrailer from "../distric/DistricTrailer";
 import "../distric/distric.css";
 import FooterDistric from "../distric/FooterDistric";
+import DistricSlider from "../distric/DistricSlider";
 
 const Distric = () => {
   return (
     <>
-      <div className="relative">
-        <div className="flex justify-center lg:flex-row-reverse flex-col bg-distric  w-full">
+      <div className="relative bg-distric">
+        <div className="flex justify-center lg:flex-row-reverse flex-col w-full">
           <div className=" lg:w-[58%] object-fill w-full">
             <figure className="w-full m-auto">
               <img
@@ -34,11 +35,11 @@ const Distric = () => {
                 gonna train now!
               </p>
             </div>
-
             <DistricTrailer />
           </div>
         </div>
-        <FooterDistric/>
+        <DistricSlider />
+        <FooterDistric />
       </div>
     </>
   );
