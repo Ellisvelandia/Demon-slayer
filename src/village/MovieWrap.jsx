@@ -28,6 +28,7 @@ const MovieWrap = () => {
                 alt="play logo"
                 className="w-20 h-20 cursor-pointer z-20"
                 onClick={() => setMovie(`${village.video}`)}
+                loading="lazy"
               />
             </div>
           </div>
