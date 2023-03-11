@@ -1,10 +1,11 @@
 import MugenTvTrailer from "../mugentv/MugenTvTrailer";
 import "../mugentv/mugentv.css";
 import FooterMugenTv from "../mugentv/FooterMugenTv";
+import MugenSlider from "../mugentv/MugenSlider";
 
 const MugenTv = () => {
   return (
-    <div className="relative w-full my-0 mx-auto">
+    <div className="relative w-full my-0 mx-auto bg-tv">
       <div className="flex justify-center lg:flex-row-reverse flex-col bg-tv relative w-full">
         <div className="relative lg:w-[58%] w-full">
           <figure className="w-full m-auto">
@@ -17,6 +18,7 @@ const MugenTv = () => {
         </div>
         <MugenTvTrailer />
       </div>
+        <MugenSlider />
       <FooterMugenTv />
     </div>
   );
