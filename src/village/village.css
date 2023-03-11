@@ -19,6 +19,23 @@
   margin-bottom: 1.8em;
 }
 
+#jmm-1678470016256__youtube-wrap {
+  position: relative;
+}
+#jmm-1678470016256__youtube-wrap::before {
+  content: "";
+  display: block;
+  width: 100%;
+  padding-top: 56.25%;
+}
+#jmm-1678470016256__youtube {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 @keyframes pc_in {
   0% {
     transform: scale(1.01);
