@@ -14,6 +14,8 @@ const MugenTv = () => {
               alt="mugen tv"
               className="w-full align-middle"
               loading="lazy"
+              width="100%"
+              height="100%"
             />
           </figure>
         </div>

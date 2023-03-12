@@ -4,8 +4,7 @@
   max-width: 100%;
   height: 100%;
   box-sizing: border-box;
-  font-family: ten-mincho, "Noto Serif JP", serif, "YuMincho",
-    "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho";
+  font-family: "Noto Serif JP", sans-serif;
   -webkit-text-size-adjust: 100%;
   margin: 0;
   padding: 0;
@@ -17,8 +16,8 @@
 }
 
 body {
-  background: url("https://kimetsusai.com/assets/img/bg_cont_pc.jpg") no-repeat
-    center top fixed;
+  background: url("https://res.cloudinary.com/dr49dbp8d/image/upload/v1678602316/demon%20slayer/bg-cont-pc_qjukuz.webp")
+    no-repeat center top fixed;
   background-size: cover;
   max-width: 100%;
   min-height: calc(100vh - 130px);
@@ -43,23 +42,23 @@ body {
   height: 100%;
   top: 0;
   left: 0;
-  background: url("https://demonslayer-anime.com/assets_portal/img/common/bg_main01-deco.png")
+  background: url("https://res.cloudinary.com/dr49dbp8d/image/upload/v1678602432/demon%20slayer/bg_main01-deco_t6babb.webp")
       no-repeat right bottom,
-    url("https://demonslayer-anime.com/assets_portal/img/common/bg_main03-pt.jpg")
+    url("https://res.cloudinary.com/dr49dbp8d/image/upload/v1678602488/demon%20slayer/bg_main03-pt_y8x68m.webp")
       repeat-x center bottom,
-    url("https://demonslayer-anime.com/assets_portal/img/common/bg_main03-pt.jpg");
+    url("https://res.cloudinary.com/dr49dbp8d/image/upload/v1678602488/demon%20slayer/bg_main03-pt_y8x68m.webp");
   -webkit-background-size: 76vw, auto, auto;
   -o-background-size: 76vw, auto, auto;
   background-size: 76vw, auto, auto;
 }
 
 .befores::before {
-  background: url("https://demonslayer-anime.com/assets_portal/img/movie/icon_play.png")
+  background: url("https://res.cloudinary.com/dr49dbp8d/image/upload/v1678602579/demon%20slayer/icon_play_buu5eb.webp")
     no-repeat center rgba(0, 0, 0, 0.8);
 }
 
 .bg-mugen {
-  background: url("https://demonslayer-anime.com/mugentrain/assets/img/kv.jpg")
+  background: url("https://res.cloudinary.com/dr49dbp8d/image/upload/v1678602828/demon%20slayer/kv_1_xiuguw.webp")
     no-repeat center top fixed;
   -webkit-background-size: 100vw, auto, auto;
   -o-background-size: 100vw, auto, auto;
@@ -67,7 +66,7 @@ body {
 }
 
 .wrapper {
-  background-image: url("https://demonslayer-anime.com/mugentrain/assets/img/bg_smoke_red.png");
+  background-image: url("https://res.cloudinary.com/dr49dbp8d/image/upload/v1678608135/demon%20slayer/bg_smoke_red_fo6fxg.webp");
   -webkit-animation: move_bg_r 58s linear infinite;
   -moz-animation: move_bg_r 58s linear infinite;
   -o-animation: move_bg_r 58s linear infinite;
@@ -75,7 +74,7 @@ body {
 }
 
 .wrappers {
-  background-image: url("https://demonslayer-anime.com/mugentrain/assets/img/bg_smoke_blue.png");
+  background-image: url("https://res.cloudinary.com/dr49dbp8d/image/upload/v1678606166/demon%20slayer/bg_smoke_blue_1_xnpoft.webp");
   -webkit-animation: move_bg_r 60s linear infinite;
   -moz-animation: move_bg_r 60s linear infinite;
   -o-animation: move_bg_r 60s linear infinite;

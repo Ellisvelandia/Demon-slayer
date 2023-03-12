@@ -22,6 +22,8 @@ const Poster = () => {
             alt="demonslayer"
             loading="lazy"
             className="md:aspect-square 2xl:h-auto h-screen w-full"
+            width="100%"
+            height="100%"
           />
         </div>
       ) : (
@@ -31,6 +33,8 @@ const Poster = () => {
             alt="demonslayer"
             className="md:aspect-square 2xl:h-auto h-screen w-full"
             loading="lazy"
+            width="100%"
+            height="100%"
           />
         </div>
       )}

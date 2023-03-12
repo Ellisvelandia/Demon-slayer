@@ -26,6 +26,8 @@ const Distric = () => {
                   alt="mugen arc logo"
                   className="block align-middle w-full"
                   loading="lazy"
+                  width="100%"
+                  height="100%"
                 />
               </Link>
             </div>
@@ -45,6 +47,7 @@ const Distric = () => {
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
                   loading="lazy"
+                  importance="low"
                   className="object-fill"
                 ></iframe>
               </div>

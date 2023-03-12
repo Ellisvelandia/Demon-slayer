@@ -22,6 +22,7 @@ export const Popup = ({ setMovie, movie }) => {
               height="100%"
               className="aspect-video w-full"
               loading="lazy"
+              importance="low"
             />
           ))}
           <button onClick={() => setMovie(null)}>&times;</button>

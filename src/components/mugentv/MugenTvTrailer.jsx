@@ -10,6 +10,8 @@ const MugenTvTrailer = () => {
             alt="mugen arc logo"
             className="block align-middle w-full"
             loading="lazy"
+            width="100%"
+            height="100%"
           />
         </Link>
       </div>
@@ -18,10 +20,7 @@ const MugenTvTrailer = () => {
           With your blade, bring an end to the nightmare.
         </p>
       </div>
-      <div
-        className="w-full lg:h-[400px] p-4"
-        style={{ margin: "0 auto" }}
-      >
+      <div className="w-full lg:h-[400px] p-4" style={{ margin: "0 auto" }}>
         <iframe
           width="100%"
           height="100%"
@@ -30,6 +29,7 @@ const MugenTvTrailer = () => {
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
           loading="lazy"
+          importance="low"
           className="object-fill"
         ></iframe>
       </div>

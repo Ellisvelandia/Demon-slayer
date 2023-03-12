@@ -18,6 +18,8 @@ export const HomeDemon = () => {
               alt=""
               className="w-full h-52 object-fill relative shadow-md shadow-[#6b4312]"
               loading="lazy"
+              width="100%"
+              height="100%"
             />
           </div>
           <div className="bg-black flex px-1 py-2 border-solid border border-[#6b4312] justify-center">
@@ -26,19 +28,22 @@ export const HomeDemon = () => {
               alt="trailer logo"
               className="w-80 h-56"
               loading="lazy"
+              width="100%"
+              height="100%"
             />
           </div>
           <div className="w-full h-full flex justify-center items-center sm:p-0 p-2">
             <iframe
-              width="560"
-              height="315"
+              width="100%"
+              height="100%"
               src="https://www.youtube.com/embed/vFFyX928D9k"
               title="YouTube video player"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen
               loading="lazy"
-              className="aspect-video border-solid border-[#6b4312] w-full h-full "
+              className="aspect-video border-solid border-[#6b4312] w-full h-full"
+              importance="low"
             ></iframe>
           </div>
 

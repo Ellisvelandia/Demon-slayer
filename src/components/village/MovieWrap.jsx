@@ -18,6 +18,8 @@ const MovieWrap = () => {
               alt="logos oficial trailers"
               className="aspect-video"
               loading="lazy"
+              width="100%"
+              height="100%"
             />
             <p className="absolute top-0 left-0 text-white bg-black px-2 py-1">
               {village.title}
@@ -29,6 +31,8 @@ const MovieWrap = () => {
                 className="w-20 h-20 cursor-pointer z-20"
                 onClick={() => setMovie(`${village.video}`)}
                 loading="lazy"
+                width="100%"
+                height="100%"
               />
             </div>
           </div>
@@ -52,6 +56,7 @@ const MovieWrap = () => {
                 height="100%"
                 className="aspect-video w-full"
                 loading="lazy"
+                importance="low"
               />
             ))}
             <button onClick={() => setMovie(null)}>&times;</button>

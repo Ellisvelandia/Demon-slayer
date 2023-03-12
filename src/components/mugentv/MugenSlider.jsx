@@ -64,8 +64,10 @@ const MugenSlider = () => {
                 <img
                   src={mugen.posters}
                   alt="logos oficial trailers"
-                  className="aspect-video"
+                  className="aspect-video lg:h-[400px]"
                   loading="lazy"
+                  width="100%"
+                  height="auto"
                 />
                 <p className="absolute top-0 left-0 text-white bg-black px-2 py-1 md:text-base text-xs">
                   {mugen.title}
@@ -77,6 +79,8 @@ const MugenSlider = () => {
                     className="w-28 h-28 cursor-pointer z-20"
                     loading="lazy"
                     onClick={() => setMovie(`${mugen.movies}`)}
+                    width="100%"
+                    height="100%"
                   />
                 </div>
               </div>
@@ -91,6 +95,8 @@ const MugenSlider = () => {
           alt="demons slayer"
           className="md:w-80 w-60"
           loading="lazy"
+          width="100%"
+          height="100%"
         />
       </div>
 
@@ -110,6 +116,7 @@ const MugenSlider = () => {
               height="100%"
               className="aspect-video w-full"
               loading="lazy"
+              importance="low"
             />
             <button onClick={() => setMovie(null)}>&times;</button>
           </>

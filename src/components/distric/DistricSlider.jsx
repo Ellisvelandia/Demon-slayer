@@ -62,8 +62,10 @@ const DistricSlider = () => {
                 <img
                   src={distric.posters}
                   alt="logos oficial trailers"
-                  className="aspect-video"
+                  className="aspect-video lg:h-[400px]"
                   loading="lazy"
+                  width="100%"
+                  height="100%"
                 />
                 <p className="absolute top-0 left-0 text-white bg-black px-2 py-1 md:text-base text-xs">
                   {distric.title}
@@ -72,8 +74,10 @@ const DistricSlider = () => {
                   <img
                     src="https://res.cloudinary.com/dr49dbp8d/image/upload/v1678418525/demon%20slayer/btn-play_1_isguwo.webp"
                     alt="play logo"
-                    className="w-28 h-28 cursor-pointer z-20"
+                    className="lg:w-24 lg:h-24 w-16 h-16 cursor-pointer z-20"
                     loading="lazy"
+                    width="100%"
+                    height="100%"
                     onClick={() => setMovie(`${distric.movies}`)}
                   />
                 </div>
@@ -89,6 +93,8 @@ const DistricSlider = () => {
           alt="demons slayer"
           className="md:w-80 w-40"
           loading="lazy"
+          width="100%"
+          height="100%"
         />
       </div>
 
@@ -108,6 +114,7 @@ const DistricSlider = () => {
               height="100%"
               className="aspect-video w-full"
               loading="lazy"
+              importance="low"
             />
             <button onClick={() => setMovie(null)}>&times;</button>
           </>

@@ -59,20 +59,24 @@ const ListMoviesReveal = () => {
               <img
                 src={season.posters}
                 alt="comics"
-                className="object-fill m-auto  h-[500px] opacity-70 hover:opacity-100"
+                className="object-fill m-auto  lg:h-[400px] aspect-video opacity-70 hover:opacity-100"
                 loading="lazy"
+                width="100%"
+                height="100%"
               />
-              <h2 className="absolute top-0 text-center left-0 bg-black text-lg tracking-widest leading-9">
+              <h2 className="absolute top-0 text-center left-0 bg-black lg:text-lg text-xs tracking-widest leading-9">
                 {season.title}
               </h2>
               <div
-                className="cursor-pointer absolute top-[35%] left-[35%] right-[25%]"
+                className="cursor-pointer absolute top-[35%] left-[35%] right-[25%] lg:w-28 w-20  hover:scale-110"
                 onClick={() => setMovie(season.movies)}
               >
                 <img
                   src="https://res.cloudinary.com/dr49dbp8d/image/upload/v1678403494/demon%20slayer/btn-play_ywm69j.webp"
                   alt="play logo"
                   loading="lazy"
+                  width="100%"
+                  height="100%"
                 />
               </div>
             </div>
@@ -96,6 +100,7 @@ const ListMoviesReveal = () => {
               height="100%"
               className="aspect-video w-full"
               loading="lazy"
+              importance="low"
             />
             <button onClick={() => setMovie(null)}>&times;</button>
           </>

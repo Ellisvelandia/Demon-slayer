@@ -20,6 +20,8 @@ const Village = () => {
               alt="logo"
               loading="lazy"
               className="max-w-full align-bottom h-auto"
+              width="100%"
+              height="100%"
             />
           </Link>
           <p

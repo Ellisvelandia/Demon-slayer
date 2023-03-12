@@ -16,6 +16,8 @@ const Cards = () => {
                 src={image.image}
                 alt="seasons & movies pictures"
                 loading="lazy"
+                width="100%"
+                height="100%"
               />
             </Link>
           </div>

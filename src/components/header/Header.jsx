@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import km from "../../assets/km.png";
 import { Pivot as Hamburger } from "hamburger-react";
 import HeaderMobile from "./HeaderMobile";
 import SocialIcons from "../SocialIcons";
@@ -31,7 +30,7 @@ const Header = () => {
         <div className="m-auto pb-5">
           <div className="relative ">
             <img
-              src={km}
+              src="https://res.cloudinary.com/dr49dbp8d/image/upload/v1678601580/demon%20slayer/km_dg9749.webp"
               alt="logo footer"
               className="object-fill"
               loading="lazy"
