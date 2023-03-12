@@ -15,7 +15,9 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.8.2",
     "react-social-icons": "^5.15.0",
-    "swiper": "^9.1.0"
+    "swiper": "^9.1.0",
+    "vite-plugin-html": "^3.2.0",
+    "vite-plugin-purgecss": "^0.2.12"
   },
   "devDependencies": {
     "@types/react": "^18.0.27",
