@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { villages } from "../data/vilageTrailers";
+import { villages } from "../../data/vilageTrailers";
 import "./village.css";
 
 const MovieWrap = () => {

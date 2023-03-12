@@ -19,7 +19,7 @@ const MugenTvTrailer = () => {
         </p>
       </div>
       <div
-        className="w-full bg-tv lg:h-[400px] p-4"
+        className="w-full lg:h-[400px] p-4"
         style={{ margin: "0 auto" }}
       >
         <iframe

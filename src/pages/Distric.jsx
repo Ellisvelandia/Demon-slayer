@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import "../distric/distric.css";
-import FooterDistric from "../distric/FooterDistric";
-import DistricSlider from "../distric/DistricSlider";
+import "../components/distric/distric.css";
+import FooterDistric from "../components/distric/FooterDistric";
+import DistricSlider from "../components/distric/DistricSlider";
 
 const Distric = () => {
   return (
@@ -35,7 +35,7 @@ const Distric = () => {
                 gonna train now!
               </p>
             </div>
-            <div className="w-full bg-distric" style={{ margin: "0 auto" }}>
+            <div className="w-full" style={{ margin: "0 auto" }}>
               <div className="w-full xl:pt-[7%] lg:h-[450px] relative p-4 lg:py-4 py-8">
                 <iframe
                   width="100%"

@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import FooterMugen from "../mugenmovies/FooterMugen";
-import MegunVideo from "../mugenmovies/MugenVideo";
-import Staff from "../mugenmovies/Staff";
+import FooterMugen from "../components/mugenmovies/FooterMugen";
+import MegunVideo from "../components/mugenmovies/MugenVideo";
+import Staff from "../components/mugenmovies/Staff";
 
 const MugenMovie = () => {
   return (

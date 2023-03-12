@@ -1,4 +1,3 @@
-import React from "react";
 import Cast from "./Cast";
 
 const StaffVillage = () => {

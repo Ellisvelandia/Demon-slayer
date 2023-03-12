@@ -1,9 +1,9 @@
-import MovieWrap from "../village/MovieWrap";
-import Poster from "../village/Poster";
-import StaffVillage from "../village/StaffVillage";
+import MovieWrap from "../components/village/MovieWrap";
+import Poster from "../components/village/Poster";
+import StaffVillage from "../components/village/StaffVillage";
 import { Link } from "react-router-dom";
-import "../village/village.css";
-import VillageFooter from "../village/VillageFooter";
+import "../components/village/village.css";
+import VillageFooter from "../components/village/VillageFooter";
 
 const Village = () => {
   return (

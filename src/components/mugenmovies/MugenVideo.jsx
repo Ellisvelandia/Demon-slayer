@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import ReactPlayer from "react-player";
-import play from "../assets/play.png";
+import play from "../../assets/play.png";
 
 const MegunVideo = () => {
   const [playing, setPlaying] = useState(false);

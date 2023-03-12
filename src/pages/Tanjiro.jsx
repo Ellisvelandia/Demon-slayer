@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import FooterReveal from "../resolve_arc/FooterReveal";
-import Introduction from "../resolve_arc/Introduction";
-import ListMoviesReveal from "../resolve_arc/ListMoviesReveal";
+import FooterReveal from "../components/resolve/FooterReveal";
+import Introduction from "../components/resolve/Introduction";
+import ListMoviesReveal from "../components/resolve/ListMoviesReveal";
 
 const Tanjiro = () => {
   return (

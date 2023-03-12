@@ -1,8 +1,8 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import Carousel from "better-react-carousel";
-import "../mugentv/mugentv.css";
-import play from "../assets/play.png";
+import "./mugentv.css";
+import play from "../../assets/play.png";
 
 const MugenSlider = () => {
   const [mugenMovies, setMugenMovies] = useState([]);
@@ -19,7 +19,7 @@ const MugenSlider = () => {
   }, []);
 
   return (
-    <div className="my-20 bg-black bg-tv w-full">
+    <div className="my-20 w-full">
       <Carousel
         cols={2}
         rows={1}

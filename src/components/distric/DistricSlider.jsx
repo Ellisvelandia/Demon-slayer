@@ -1,7 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import Carousel from "better-react-carousel";
-import "../distric/distric.css";
+import "./distric.css";
 
 const DistricSlider = () => {
   const [districMovies, setDistricMovies] = useState([]);
@@ -18,7 +18,7 @@ const DistricSlider = () => {
   }, []);
 
   return (
-    <div className="my-20 bg-black bg-distric w-full">
+    <div className="my-20 w-full">
       <Carousel
         cols={2}
         rows={1}
