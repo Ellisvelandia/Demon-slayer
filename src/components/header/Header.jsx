@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import km from "../../assets/km.png";
 import { Pivot as Hamburger } from "hamburger-react";
 import HeaderMobile from "./HeaderMobile";
-import SocialIcons from "../commons/SocialIcons";
-import Links from "../commons/Links";
+import SocialIcons from "../SocialIcons";
+import Links from "../Links";
 
 const Header = () => {
   const [isOpen, setOpen] = useState(false);

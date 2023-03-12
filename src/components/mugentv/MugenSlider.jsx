@@ -24,12 +24,8 @@ const MugenSlider = () => {
         cols={2}
         rows={1}
         gap={10}
-        loop
         showDots={true}
-        scrollSnap={true}
-        autoplay={true}
         dotColorInactive="#000"
-        mobileBreakpoint={767}
       >
         {mugenMovies.map((mugen) => (
           <Carousel.Item key={mugen._id} className="relative">
