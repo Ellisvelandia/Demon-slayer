@@ -13,8 +13,8 @@ const RoutesDemon = () => {
       <Route path="/" element={<HomeDemon />} />
       <Route path="/mugenmovie" element={<MugenMovie />} />
       <Route path="/resolvearc" element={<Tanjiro />} />
-      <Route path="/mugentv" element={<MugenTv />} />
-      <Route path="/distric" element={<Distric />} />
+      {/* <Route path="/mugentv" element={<MugenTv />} /> */}
+      {/* <Route path="/distric" element={<Distric />} /> */}
       <Route path="/village" element={<Village />} />
     </Routes>
   );
