@@ -67,7 +67,7 @@ const MugenSlider = () => {
                   className="aspect-video lg:h-[400px]"
                   loading="lazy"
                   width="100%"
-                  height="auto"
+                  height="100%"
                 />
                 <p className="absolute top-0 left-0 text-white bg-black px-2 py-1 md:text-base text-xs">
                   {mugen.title}
