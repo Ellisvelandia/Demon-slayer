@@ -4,7 +4,7 @@ import { socials } from "../data/social";
 
 const SocialIcons = () => {
   return (
-    <div className="h-11 flex justify-center items-center">
+    <div className="h-11 flex justify-center items-center text-lg">
       <div className="mr-2 flex-shrink-0">
         {socials.map((social) => (
           <SocialIcon

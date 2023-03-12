@@ -12,7 +12,7 @@ const MovieWrap = () => {
           className="2xl:w-[500px] w-full border-solid border border-[#b38c48] mx-auto my-8 overflow-hidden"
           key={village.id}
         >
-          <div className="bg-cover opacity-80 hover:opacity-100 h-[240px] w-full 2xl:w-[500px] relative">
+          <div className="bg-cover opacity-80 hover:opacity-100 xl:h-[240px] w-full 2xl:w-[500px] relative">
             <img
               src={village.img}
               alt="logos oficial trailers"

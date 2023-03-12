@@ -14,11 +14,11 @@ const Header = () => {
         className="pt-10 w-60 bg-black fixed box-border left-0 top-0 bottom-auto border-r-2 border-solid border-[#6b4312] min-h-screen flex flex-col invisible md:visible z-10"
         style={{ paddingTop: "1px" }}
       >
-        <div className="text-center items-center pt-6 pb-7">
+        <div className="flex justify-center text-center items-center pt-6 pb-7">
           <img
             src="https://res.cloudinary.com/dr49dbp8d/image/upload/v1678399511/demon%20slayer/logo_1_eldkrr.webp"
             alt="demon slayer"
-            className="w-full"
+            className="lg:w-52 w-40"
             loading="lazy"
           />
         </div>
@@ -53,7 +53,7 @@ const Header = () => {
             onClick={() => setToggleMenu(!toggleMenu)}
           />
         </div>
-        <div className="w-[16vw] m-auto">
+        <div className="w-[36vw] m-auto">
           <img
             src="https://res.cloudinary.com/dr49dbp8d/image/upload/v1678399641/demon%20slayer/logo_2_zepmcn.webp"
             alt="Demon Slayer: Kimetsu No Yaiba"

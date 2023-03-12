@@ -2,13 +2,13 @@ import React from "react";
 
 const Staff = () => {
   return (
-    <div className="rounded-sm w-full flex lg:flex-row flex-col p-2">
-      <div className=" lg:w-1/2 w-full h-full rounded-md justify-center items-center p-2">
+    <div className="rounded-sm w-full flex lg:flex-row flex-col p-1">
+      <div className=" lg:w-1/2 w-full rounded-md justify-center items-center p-2">
         <img
           src="https://res.cloudinary.com/dr49dbp8d/image/upload/v1678386499/demon%20slayer/kv_rkic4n_1_mvlph5.webp"
           alt="mugen banner"
           loading="lazy"
-          className="w-full align-bottom "
+          className="lg:w-full aspect-square align-bottom"
         />
       </div>
       <div className=" lg:w-1/2 w-full h-full rounded-md justify-center items-center p-2">

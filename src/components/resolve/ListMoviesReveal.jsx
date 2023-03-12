@@ -13,17 +13,7 @@ import "swiper/css/zoom";
 
 const ListMoviesReveal = () => {
   const [seasons1, setSeasons1] = useState([]);
-  const [screenSize, setScreenSize] = useState(window.screen.width);
   const [movie, setMovie] = useState(null);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setScreenSize(window.screen.width);
-    };
-    window.addEventListener("resize", handleResize);
-    handleResize();
-    return () => window.removeEventListener("resize", handleResize);
-  }, [screenSize]);
 
   useEffect(() => {
     const getMovies = async () => {
@@ -43,10 +33,30 @@ const ListMoviesReveal = () => {
           "--swiper-pagination-color": "#C90000",
         }}
         modules={[Pagination, A11y, Autoplay, Keyboard, Navigation, Zoom]}
-        slidesPerView={
-          screenSize < 768 ? 1 : screenSize >= 768 && screenSize < 1024 ? 2 : 3
-        }
-        navigation
+        slidesPerView={1}
+        breakpoints={{
+          "@0.00": {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          "@0.75": {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          "@1.00": {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          "@1.50": {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+        }}
+        navigation={{
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+          hideOnClick: true,
+        }}
         zoom={true}
         spaceBetween={10}
         keyboard={{ enabled: true }}
@@ -54,30 +64,31 @@ const ListMoviesReveal = () => {
         pagination={{ clickable: true }}
       >
         {seasons1.map((season) => (
-          <SwiperSlide key={season._id}>
-            <div className="w-full h-full relative drop-shadow-lg shadow-black font-bold text-white border-solid border border-[#b38c48]">
-              <img
-                src={season.posters}
-                alt="comics"
-                className="object-fill m-auto  lg:h-[400px] aspect-video opacity-70 hover:opacity-100"
-                loading="lazy"
-                width="100%"
-                height="100%"
-              />
-              <h2 className="absolute top-0 text-center left-0 bg-black lg:text-lg text-xs tracking-widest leading-9">
-                {season.title}
-              </h2>
-              <div
-                className="cursor-pointer absolute top-[35%] left-[35%] right-[25%] lg:w-28 w-20  hover:scale-110"
-                onClick={() => setMovie(season.movies)}
-              >
+          <SwiperSlide key={season._id} className="relative">
+            <div className="w-full border-solid border border-[#b38c48] mx-auto my-8 overflow-hidden text-white">
+              <div className="bg-cover opacity-80 hover:opacity-100 relative">
                 <img
-                  src="https://res.cloudinary.com/dr49dbp8d/image/upload/v1678403494/demon%20slayer/btn-play_ywm69j.webp"
-                  alt="play logo"
+                  src={season.posters}
+                  alt="comics"
+                  className="aspect-video lg:h-[400px]"
                   loading="lazy"
                   width="100%"
                   height="100%"
                 />
+                <h2 className="absolute top-0 left-0 text-white bg-black px-2 py-1 md:text-base text-xs">
+                  {season.title}
+                </h2>
+                <div className="hover:scale-110 w-full h-full justify-center absolute top-0 flex items-center">
+                  <img
+                    src="https://res.cloudinary.com/dr49dbp8d/image/upload/v1678403494/demon%20slayer/btn-play_ywm69j.webp"
+                    alt="play logo"
+                    loading="lazy"
+                    className="lg:w-24 lg:h-24 w-16 h-16 cursor-pointer z-20"
+                    width="100%"
+                    height="100%"
+                    onClick={() => setMovie(season.movies)}
+                  />
+                </div>
               </div>
             </div>
           </SwiperSlide>

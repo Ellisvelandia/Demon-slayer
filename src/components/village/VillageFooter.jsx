@@ -17,10 +17,10 @@ const VillageFooter = () => {
           </a>
         </div>
       </div>
-      <p className="text-xs text-[#666666] md:text-right text-center text-[11px] md:my-0 my-4">
+      <p className="lg:text-xs text-[#666666] md:text-right text-center text-[10px]  md:my-0 my-4">
         ©Koyoharu Gotoge / SHUEISHA, Aniplex, ufotable
       </p>
-      <div className="md:text-left text-center tracking-widest flex justify-center md:my-0 my-6  items-center md:absolute md:top-[50%] md:left-10 md:transform md:-translate-y-1/2 lg:text-[14px] md:text-[11px] text-[12px]">
+      <div className="md:text-left text-center lg:tracking-widest flex justify-center md:my-0 my-6  items-center md:absolute md:top-[50%] md:left-10 md:transform md:-translate-y-1/2 lg:text-[14px] md:text-[11px] text-[10px]">
         <div className="flex-col flex">
           <Link to="/distric" className="list-none relative mb-3">
             Demon Slayer -Kimetsu No Yaiba- Entertainment District Arc

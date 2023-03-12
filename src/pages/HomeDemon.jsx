@@ -26,13 +26,13 @@ export const HomeDemon = () => {
             <img
               src="https://res.cloudinary.com/dr49dbp8d/image/upload/v1678386803/demon%20slayer/title_movie_jd5xps.webp"
               alt="trailer logo"
-              className="w-80 h-56"
+              className="lg:w-80 md:w-60 lg:h-56 md:h-40 w-40 h-28"
               loading="lazy"
               width="100%"
               height="100%"
             />
           </div>
-          <div className="w-full h-full flex justify-center items-center sm:p-0 p-2">
+          <div className="w-full lg:h-full flex justify-center items-center sm:p-0 p-2">
             <iframe
               width="100%"
               height="100%"
@@ -42,7 +42,7 @@ export const HomeDemon = () => {
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen
               loading="lazy"
-              className="aspect-video border-solid border-[#6b4312] w-full h-full"
+              className="md:aspect-video aspect-square border-solid border-[#6b4312] w-full md:h-full"
               importance="low"
             ></iframe>
           </div>

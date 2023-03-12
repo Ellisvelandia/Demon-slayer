@@ -4,9 +4,9 @@ import SocialIcons from "../SocialIcons";
 
 const HeaderMobile = ({ setToggleMenu }) => {
   return (
-    <div className="fixed w-full top-0 h-full z-[500]">
+    <div className="fixed w-full top-0 left-0 h-full z-[500]">
       <div
-        className="menu w-full h-screen"
+        className="menu w-full"
         style={{ background: "rgba(0,0,0,0.80)" }}
         onClick={() => setToggleMenu(false)}
       >
@@ -24,7 +24,7 @@ const HeaderMobile = ({ setToggleMenu }) => {
             <Links />
 
             <SocialIcons />
-            <div className="flex flex-col justify-center items-center w-full pt-8">
+            <div className="flex flex-col justify-center items-center pt-8">
               <img
                 src="https://res.cloudinary.com/dr49dbp8d/image/upload/v1678590333/demon%20slayer/main-logo-2x_x9hrht.webp"
                 alt="demon logo"

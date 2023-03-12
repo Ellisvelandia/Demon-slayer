@@ -13,17 +13,7 @@ import "swiper/css/zoom";
 
 const DistricSlider = () => {
   const [districMovies, setDistricMovies] = useState([]);
-  const [screenSize, setScreenSize] = useState(window.screen.width);
   const [movie, setMovie] = useState(null);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setScreenSize(window.screen.width);
-    };
-    window.addEventListener("resize", handleResize);
-    handleResize();
-    return () => window.removeEventListener("resize", handleResize);
-  }, [screenSize]);
 
   useEffect(() => {
     const getDistricMovies = async () => {
@@ -42,10 +32,30 @@ const DistricSlider = () => {
           "--swiper-pagination-color": "#C90000",
         }}
         modules={[Pagination, A11y, Autoplay, Keyboard, Navigation, Zoom]}
-        slidesPerView={
-          screenSize < 768 ? 1 : screenSize >= 768 && screenSize < 1024 ? 2 : 3
-        }
-        navigation
+        slidesPerView={1}
+        breakpoints={{
+          "@0.00": {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          "@0.75": {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          "@1.00": {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          "@1.50": {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+        }}
+        navigation={{
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+          hideOnClick: true,
+        }}
         zoom={true}
         spaceBetween={10}
         keyboard={{ enabled: true }}
