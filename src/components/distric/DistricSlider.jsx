@@ -1,11 +1,29 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import Carousel from "better-react-carousel";
 import "./distric.css";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination, A11y, Autoplay, Keyboard, Navigation, Zoom } from "swiper";
+
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/autoplay";
+import "swiper/css/keyboard";
+import "swiper/css/navigation";
+import "swiper/css/zoom";
 
 const DistricSlider = () => {
   const [districMovies, setDistricMovies] = useState([]);
+  const [screenSize, setScreenSize] = useState(window.screen.width);
   const [movie, setMovie] = useState(null);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setScreenSize(window.screen.width);
+    };
+    window.addEventListener("resize", handleResize);
+    handleResize();
+    return () => window.removeEventListener("resize", handleResize);
+  }, [screenSize]);
 
   useEffect(() => {
     const getDistricMovies = async () => {
@@ -19,15 +37,23 @@ const DistricSlider = () => {
 
   return (
     <div className="my-20 w-full">
-      <Carousel
-        cols={2}
-        rows={1}
-        gap={10}
-        showDots={true}
-        dotColorInactive="#000"
+      <Swiper
+        style={{
+          "--swiper-pagination-color": "#C90000",
+        }}
+        modules={[Pagination, A11y, Autoplay, Keyboard, Navigation, Zoom]}
+        slidesPerView={
+          screenSize < 768 ? 1 : screenSize >= 768 && screenSize < 1024 ? 2 : 3
+        }
+        navigation
+        zoom={true}
+        spaceBetween={10}
+        keyboard={{ enabled: true }}
+        autoplay={{ delay: 3000 }}
+        pagination={{ clickable: true }}
       >
         {districMovies.map((distric) => (
-          <Carousel.Item key={distric._id} className="relative">
+          <SwiperSlide key={distric._id} className="relative">
             <div
               className="w-full border-solid border border-[#b38c48] mx-auto my-8 overflow-hidden"
               key={distric.id}
@@ -53,9 +79,9 @@ const DistricSlider = () => {
                 </div>
               </div>
             </div>
-          </Carousel.Item>
+          </SwiperSlide>
         ))}
-      </Carousel>
+      </Swiper>
 
       <div className="w-full justify-center flex mt-8">
         <img

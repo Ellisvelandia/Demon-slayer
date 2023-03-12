@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import "./introduction.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, A11y, Autoplay, Keyboard, Navigation, Zoom } from "swiper";
 
@@ -9,7 +10,6 @@ import "swiper/css/autoplay";
 import "swiper/css/keyboard";
 import "swiper/css/navigation";
 import "swiper/css/zoom";
-import "./introduction.css";
 
 const ListMoviesReveal = () => {
   const [seasons1, setSeasons1] = useState([]);
