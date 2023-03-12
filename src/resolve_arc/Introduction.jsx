@@ -9,12 +9,14 @@ const Introduction = () => {
         <img
           src="https://res.cloudinary.com/dr49dbp8d/image/upload/v1678390100/demon%20slayer/title-intro_tgiibo.webp"
           alt="introduction"
+          loading="lazy"
         />
       </div>
       <div className="flex w-full justify-center">
         <img
           src="https://res.cloudinary.com/dr49dbp8d/image/upload/v1678389855/demon%20slayer/text-intro_fxggax.webp"
           alt="about demon slayer"
+          loading="lazy"
         />
       </div>
       <div className="w-full md:h-[300px] h-[180px] bg-cover absolute block area_up lg:-bottom-[140px] md:-bottom-[200px] -bottom-[150px]"></div>

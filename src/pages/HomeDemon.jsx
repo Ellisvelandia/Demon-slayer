@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import Header from "../components/header/Header";
-import Cards from "../components/home/Cards";
-import { Popup } from "../components/home/Popup";
-import VideoTrailer from "../components/home/VideoTrailer";
+import Cards from "../components/homedemon/Cards";
+import { Popup } from "../components/homedemon/Popup";
+import VideoTrailer from "../components/homedemon/VideoTrailer";
 
 export const HomeDemon = () => {
   const [movie, setMovie] = useState(null);
@@ -14,9 +14,10 @@ export const HomeDemon = () => {
         <div className="relative z-10 md:ml-[240px] h-screen">
           <div className="bg-black px-4 py-5 flex border-solid border border-[#6b4312] text-white  justify-center">
             <img
-              src="https://a-static.besthdwallpaper.com/demon-slayer-9-hashiras-wallpaper-1920x600-90592_57.jpg"
+              src="https://res.cloudinary.com/dr49dbp8d/image/upload/v1678590033/demon%20slayer/yer-9-hashiras-wallpaper-1920x600-57_mxm57s.webp"
               alt=""
               className="w-full h-52 object-fill relative shadow-md shadow-[#6b4312]"
+              loading="lazy"
             />
           </div>
           <div className="bg-black flex px-1 py-2 border-solid border border-[#6b4312] justify-center">
@@ -24,6 +25,7 @@ export const HomeDemon = () => {
               src="https://res.cloudinary.com/dr49dbp8d/image/upload/v1678386803/demon%20slayer/title_movie_jd5xps.webp"
               alt="trailer logo"
               className="w-80 h-56"
+              loading="lazy"
             />
           </div>
           <div className="w-full h-full flex justify-center items-center sm:p-0 p-2">
@@ -35,6 +37,7 @@ export const HomeDemon = () => {
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen
+              loading="lazy"
               className="aspect-video border-solid border-[#6b4312] w-full h-full "
             ></iframe>
           </div>

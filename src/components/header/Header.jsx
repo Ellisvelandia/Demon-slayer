@@ -20,6 +20,7 @@ const Header = () => {
             src="https://res.cloudinary.com/dr49dbp8d/image/upload/v1678399511/demon%20slayer/logo_1_eldkrr.webp"
             alt="demon slayer"
             className="w-full"
+            loading="lazy"
           />
         </div>
 
@@ -29,7 +30,12 @@ const Header = () => {
         </div>
         <div className="m-auto pb-5">
           <div className="relative ">
-            <img src={km} alt="logo footer" className="object-fill " />
+            <img
+              src={km}
+              alt="logo footer"
+              className="object-fill"
+              loading="lazy"
+            />
           </div>
         </div>
       </div>
@@ -52,7 +58,8 @@ const Header = () => {
           <img
             src="https://res.cloudinary.com/dr49dbp8d/image/upload/v1678399641/demon%20slayer/logo_2_zepmcn.webp"
             alt="Demon Slayer: Kimetsu No Yaiba"
-            className="max-w-full align-bottom overflow-clip "
+            className="max-w-full align-bottom overflow-clip"
+            loading="lazy"
           />
         </div>
         {isOpen && <HeaderMobile setToggleMenu={setToggleMenu} />}

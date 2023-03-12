@@ -12,7 +12,11 @@ const Cards = () => {
         >
           <div className="relative block hover:scale-105 transition ease-in-out duration-700 ">
             <Link to={image.link}>
-              <img src={image.image} alt="seasons & movies pictures" />
+              <img
+                src={image.image}
+                alt="seasons & movies pictures"
+                loading="lazy"
+              />
             </Link>
           </div>
         </div>

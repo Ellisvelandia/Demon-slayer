@@ -18,6 +18,7 @@ const Village = () => {
             <img
               src="https://res.cloudinary.com/dr49dbp8d/image/upload/v1678471487/demon%20slayer/logo_5_hap3xg.webp"
               alt="logo"
+              loading="lazy"
               className="max-w-full align-bottom h-auto"
             />
           </Link>

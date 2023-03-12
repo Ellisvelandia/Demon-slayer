@@ -20,6 +20,7 @@ const Poster = () => {
           <img
             src="https://res.cloudinary.com/dr49dbp8d/image/upload/v1678471370/demon%20slayer/kv-2_nkoiny.webp"
             alt="demonslayer"
+            loading="lazy"
             className="md:aspect-square 2xl:h-auto h-screen w-full"
           />
         </div>
@@ -29,6 +30,7 @@ const Poster = () => {
             src="https://res.cloudinary.com/dr49dbp8d/image/upload/v1678472077/demon%20slayer/kv-1_2_tmi6o5.webp"
             alt="demonslayer"
             className="md:aspect-square 2xl:h-auto h-screen w-full"
+            loading="lazy"
           />
         </div>
       )}

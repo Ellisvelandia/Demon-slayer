@@ -72,6 +72,7 @@ const ListMoviesReveal = () => {
                 <img
                   src="https://res.cloudinary.com/dr49dbp8d/image/upload/v1678403494/demon%20slayer/btn-play_ywm69j.webp"
                   alt="play logo"
+                  loading="lazy"
                 />
               </div>
             </div>
@@ -100,7 +101,6 @@ const ListMoviesReveal = () => {
           </>
         )}
       </div>
-      
     </div>
   );
 };

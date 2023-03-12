@@ -51,6 +51,7 @@ const DistricSlider = () => {
                     src="https://res.cloudinary.com/dr49dbp8d/image/upload/v1678418525/demon%20slayer/btn-play_1_isguwo.webp"
                     alt="play logo"
                     className="w-28 h-28 cursor-pointer z-20"
+                    loading="lazy"
                     onClick={() => setMovie(`${distric.movies}`)}
                   />
                 </div>

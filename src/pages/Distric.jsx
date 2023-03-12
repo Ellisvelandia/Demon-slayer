@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import DistricTrailer from "../distric/DistricTrailer";
 import "../distric/distric.css";
 import FooterDistric from "../distric/FooterDistric";
 import DistricSlider from "../distric/DistricSlider";
@@ -26,6 +25,7 @@ const Distric = () => {
                   src="https://res.cloudinary.com/dr49dbp8d/image/upload/v1678418015/demon%20slayer/logo_4_bkuioj.webp"
                   alt="mugen arc logo"
                   className="block align-middle w-full"
+                  loading="lazy"
                 />
               </Link>
             </div>
@@ -35,7 +35,20 @@ const Distric = () => {
                 gonna train now!
               </p>
             </div>
-            <DistricTrailer />
+            <div className="w-full bg-distric" style={{ margin: "0 auto" }}>
+              <div className="w-full xl:pt-[7%] lg:h-[450px] relative p-4 lg:py-4 py-8">
+                <iframe
+                  width="100%"
+                  height="100%"
+                  src="https://www.youtube.com/embed/qiD99QYHqeo"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  loading="lazy"
+                  className="object-fill"
+                ></iframe>
+              </div>
+            </div>
           </div>
         </div>
         <DistricSlider />

@@ -17,18 +17,20 @@ const HeaderMobile = ({ setToggleMenu }) => {
       >
         <div className="menu">
           <img
-            src="https://i.ibb.co/gv1xMK0/4482244-middle-removebg-preview.png"
+            src="https://res.cloudinary.com/dr49dbp8d/image/upload/v1678590249/demon%20slayer/4482244-middle-removebg-preview_kzthxl.webp"
             alt="logo"
             className="w-[66vw] m-auto"
+            loading="lazy"
           />
           <Links />
 
           <SocialIcons />
           <div className="flex flex-col justify-center items-center w-full pt-8">
             <img
-              src="https://kimetsusai.com/assets/img/main_logo_2x.png"
+              src="https://res.cloudinary.com/dr49dbp8d/image/upload/v1678590333/demon%20slayer/main-logo-2x_x9hrht.webp"
               alt="demon logo"
               className="lg:w-[460px] w-[180px]"
+              loading="lazy"
             />
           </div>
         </div>

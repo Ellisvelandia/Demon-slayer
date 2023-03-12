@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { villages } from "../data/vilageTrailers";
 import "./village.css";
-import VillageModal from "./VillageModal";
 
 const MovieWrap = () => {
   const [movie, setMovie] = useState(null);
@@ -18,6 +17,7 @@ const MovieWrap = () => {
               src={village.img}
               alt="logos oficial trailers"
               className="aspect-video"
+              loading="lazy"
             />
             <p className="absolute top-0 left-0 text-white bg-black px-2 py-1">
               {village.title}
@@ -34,7 +34,30 @@ const MovieWrap = () => {
           </div>
         </div>
       ))}
-      <VillageModal movie={movie} setMovie={setMovie} />
+      <div
+        className="popup-media z-50"
+        style={{ display: movie ? "block" : "none" }}
+      >
+        {movie && (
+          <>
+            {villages.map((village) => (
+              <iframe
+                key={village.id}
+                title=""
+                src={movie}
+                frameBorder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                width="100%"
+                height="100%"
+                className="aspect-video w-full"
+                loading="lazy"
+              />
+            ))}
+            <button onClick={() => setMovie(null)}>&times;</button>
+          </>
+        )}
+      </div>
     </div>
   );
 };

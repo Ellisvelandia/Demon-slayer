@@ -17,6 +17,7 @@ const VideoTrailer = ({ setMovie }) => {
               src={video.img}
               alt="trailer"
               className="w-full h-full object-fill"
+              loading="lazy"
             />
           </div>
         </div>

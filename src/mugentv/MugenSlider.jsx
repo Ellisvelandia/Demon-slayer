@@ -42,6 +42,7 @@ const MugenSlider = () => {
                   src={mugen.posters}
                   alt="logos oficial trailers"
                   className="aspect-video"
+                  loading="lazy"
                 />
                 <p className="absolute top-0 left-0 text-white bg-black px-2 py-1 md:text-base text-xs">
                   {mugen.title}
@@ -51,6 +52,7 @@ const MugenSlider = () => {
                     src={play}
                     alt="play logo"
                     className="w-28 h-28 cursor-pointer z-20"
+                    loading="lazy"
                     onClick={() => setMovie(`${mugen.movies}`)}
                   />
                 </div>
@@ -65,6 +67,7 @@ const MugenSlider = () => {
           src="https://res.cloudinary.com/dr49dbp8d/image/upload/v1678571237/demon%20slayer/n-2021-05-16-21-001-removebg-preview_w4zccr.webp"
           alt="demons slayer"
           className="md:w-80 w-60"
+          loading="lazy"
         />
       </div>
 

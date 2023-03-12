@@ -13,6 +13,7 @@ const MugenTv = () => {
               src="https://res.cloudinary.com/dr49dbp8d/image/upload/v1678400571/demon%20slayer/kv_nqqrgy.webp"
               alt="mugen tv"
               className="w-full align-middle"
+              loading="lazy"
             />
           </figure>
         </div>
