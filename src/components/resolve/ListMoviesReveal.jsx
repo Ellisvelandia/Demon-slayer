@@ -28,7 +28,7 @@ const ListMoviesReveal = () => {
   useEffect(() => {
     const getMovies = async () => {
       const res = await axios.get(
-        "https://demon-slayer-api-production.up.railway.app/Demonslayer/v1/getMovie"
+        "https://slayerdemonsellis.onrender.com/Demonslayer/v1/getMovie"
       );
       setSeasons1(res.data.movie);
     };

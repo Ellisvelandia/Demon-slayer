@@ -10,7 +10,7 @@ const DistricSlider = () => {
   useEffect(() => {
     const getDistricMovies = async () => {
       const res = await axios.get(
-        "https://demon-slayer-api-production.up.railway.app/Demonslayer/v1/getMovieDistric"
+        "https://slayerdemonsellis.onrender.com/Demonslayer/v1/getMovieDistric"
       );
       setDistricMovies(res.data.movie);
     };

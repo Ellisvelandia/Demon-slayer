@@ -11,7 +11,7 @@ const MugenSlider = () => {
   useEffect(() => {
     const getMugen = async () => {
       const res = await axios.get(
-        "https://demon-slayer-api-production.up.railway.app/Demonslayer/v1/getMovieMugen"
+        "https://slayerdemonsellis.onrender.com/Demonslayer/v1/getMovieMugen"
       );
       setMugenMovies(res.data.movie);
     };
