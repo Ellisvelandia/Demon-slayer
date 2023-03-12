@@ -1,7 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import Carousel from "better-react-carousel";
-import DistricModal from "./DistricModal";
 import "../distric/distric.css";
 
 const DistricSlider = () => {
@@ -60,11 +59,6 @@ const DistricSlider = () => {
           </Carousel.Item>
         ))}
       </Carousel>
-      <DistricModal
-        movie={movie}
-        setMovie={setMovie}
-        districMovies={districMovies}
-      />
 
       <div className="w-full justify-center flex mt-8">
         <img
@@ -73,6 +67,28 @@ const DistricSlider = () => {
           className="md:w-80 w-40"
           loading="lazy"
         />
+      </div>
+
+      <div
+        className="popup-media z-50"
+        style={{ display: movie ? "block" : "none" }}
+      >
+        {movie && (
+          <>
+            <iframe
+              title=""
+              src={movie}
+              frameBorder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              width="100%"
+              height="100%"
+              className="aspect-video w-full"
+              loading="lazy"
+            />
+            <button onClick={() => setMovie(null)}>&times;</button>
+          </>
+        )}
       </div>
     </div>
   );

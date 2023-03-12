@@ -78,6 +78,7 @@ const ListMoviesReveal = () => {
           </SwiperSlide>
         ))}
       </Swiper>
+
       <div
         className="popup-media z-50"
         style={{ display: movie ? "block" : "none" }}
@@ -99,6 +100,7 @@ const ListMoviesReveal = () => {
           </>
         )}
       </div>
+      
     </div>
   );
 };

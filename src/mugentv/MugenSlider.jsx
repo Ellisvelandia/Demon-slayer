@@ -3,7 +3,6 @@ import React, { useEffect, useState } from "react";
 import Carousel from "better-react-carousel";
 import "../mugentv/mugentv.css";
 import play from "../assets/play.png";
-import MugenSliderModal from "./MugenSliderModal";
 
 const MugenSlider = () => {
   const [mugenMovies, setMugenMovies] = useState([]);
@@ -60,17 +59,35 @@ const MugenSlider = () => {
           </Carousel.Item>
         ))}
       </Carousel>
-      <MugenSliderModal
-        movie={movie}
-        setMovie={setMovie}
-        mugenMovies={mugenMovies}
-      />
+
       <div className="w-full justify-center flex mt-8">
         <img
           src="https://res.cloudinary.com/dr49dbp8d/image/upload/v1678571237/demon%20slayer/n-2021-05-16-21-001-removebg-preview_w4zccr.webp"
           alt="demons slayer"
           className="md:w-80 w-60"
         />
+      </div>
+
+      <div
+        className="popup-media z-50"
+        style={{ display: movie ? "block" : "none" }}
+      >
+        {movie && (
+          <>
+            <iframe
+              title=""
+              src={movie}
+              frameBorder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              width="100%"
+              height="100%"
+              className="aspect-video w-full"
+              loading="lazy"
+            />
+            <button onClick={() => setMovie(null)}>&times;</button>
+          </>
+        )}
       </div>
     </div>
   );
